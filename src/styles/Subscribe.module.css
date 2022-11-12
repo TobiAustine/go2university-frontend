@@ -1,0 +1,97 @@
+.subscribe{
+    height: 15rem;
+    margin: 2rem 0;
+}
+
+.subscribe_container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subscribe_head{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.subscribe_body{
+    text-align: center;
+    position: relative; 
+  
+}
+
+.subscribe_body input{
+    width: 70%;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    border: none;
+    box-shadow: 0px 4px 32px 0px #00000040;
+    font-size: 1.2rem;
+}
+
+.subscribe_icon button{
+    background: transparent;
+    background: var(--primary-color);
+    padding:0.2rem 1rem;
+    position: absolute;
+    right: 17%;
+    top: 1.2rem;
+    border-radius: 2rem; 
+    border: none;
+    
+}
+
+.subscribe_body input::placeholder{
+    font-size:95%;
+}
+
+@media screen and (max-width:600px) {
+    .subscribe{
+        height: fit-content;
+    }
+
+    .subscribe_body input{
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    .subscribe_icon button{
+        right: 11%;
+        top: 1rem;
+    }
+
+    .subscribe_body input::placeholder{
+        font-size:1.1rem;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .subscribe{
+        height: fit-content;
+    }
+
+    .subscribe_head h2{
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .subscribe_body input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .subscribe_icon button{
+        padding:0.1rem 0.2rem;
+        top: 1rem;
+        right: 5%;
+        font-size: 0.1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .subscribe_body input::placeholder{
+        font-size:0.8rem;
+    }
+}

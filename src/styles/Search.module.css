@@ -1,0 +1,183 @@
+.search{
+    height: 25rem;
+    padding: 2rem 1rem;
+    /* background: red; */
+}
+
+.search_container{
+    text-align: center;
+    position: relative;
+}
+
+.search_head{
+    margin: 2rem 0;
+}
+
+.search_head h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.search_head span{
+    font-weight: 600;
+    /* color: var(--primary-color); */
+}
+
+.search_body{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.search_input{
+    width: 70%;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.search_input .searchbar{
+    width: 60%;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 46px;
+    font-size: 1rem;
+}
+
+.search_input .search_icon{
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding:0.5rem;
+    position: absolute;
+    right: 21.5%;
+    top: 0.5rem;
+    cursor: pointer;
+
+}
+
+.line1{
+    position: absolute;
+    top: 2rem;
+    right: 14rem;
+}
+
+.line2{
+    position: absolute;
+    top: 2.8rem;
+    right: 14rem;
+}
+
+.ellipse{
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+
+ @media screen and (min-width:1500px) {
+    .search_head h2{
+        font-size: 1.5rem;
+     }
+
+     .line1{
+        position: absolute;
+        top: 12%;
+        right:30%;
+    }
+    
+    .line2{
+        position: absolute;
+        top: 19%;
+        right:30%;
+    }
+
+    .search_input{
+        width: 80%;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width:890px) {
+    .search_head h2{
+        font-size: 1.5rem;
+     }
+
+     .line1{
+        position: absolute;
+        top: 12%;
+        right: 15%;
+    }
+    
+    .line2{
+        position: absolute;
+        top: 19%;
+        right: 15%;
+    }
+
+    .search_input{
+        width: 80%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .search_head h2{
+       font-size: 1.2rem;
+    }
+
+    .search_body{
+        font-size: 1rem;
+    }
+
+    .line1{
+        position: absolute;
+        top: 12%;
+        right: 2%;
+    }
+    
+    .line2{
+        position: absolute;
+        top: 19%;
+        right: 2%;
+    }
+
+    .ellipse{
+        position: absolute;
+        top: 95%;
+        left: 10%;
+    }
+
+    .search_input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .line1{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        z-index: -999;
+    }
+    
+    .line2{
+        position: absolute;
+        top: 15%;
+        right: 0%;
+    }
+
+    .search_head h2{
+        z-index: 999;
+    }
+
+}

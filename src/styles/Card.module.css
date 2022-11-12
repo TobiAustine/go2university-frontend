@@ -1,0 +1,39 @@
+.card_container{
+    border-radius: 1rem;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2rem;
+   align-items: center;
+    box-shadow:  0px 4px 32px 0px #00000040;
+    height: 15rem;
+    width: 15rem;
+    padding: 2rem;
+}
+
+.card{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+}
+
+.department a{
+    font-weight: 800;
+}
+
+.department:hover a{
+    text-decoration: underline;
+    
+}
+
+@media screen and (max-width:600px) {
+    .card_container{
+        width: 12rem;
+        height: 12rem;
+    }
+}
+

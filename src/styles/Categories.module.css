@@ -1,0 +1,45 @@
+.categories{
+    height: 35rem;
+}
+
+
+.category_head{
+    text-align: center;
+    padding: 3rem 0;
+    position: relative;
+}
+
+
+.category_head h1{
+    color: var(--primary-color);
+}
+
+.category_head_img{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.category_body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5rem;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width:1024px) {
+    .categories{
+        height: fit-content;
+    }
+
+    .category_body{
+        flex-direction: column;
+        gap: 1.5rem;
+        
+    }
+    .category_head h1{
+        margin-bottom: 1rem;
+    }
+
+}

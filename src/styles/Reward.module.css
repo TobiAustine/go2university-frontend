@@ -1,0 +1,38 @@
+.reward{
+    background:#fde9b2;
+    height: 35rem;
+    
+}
+
+.reward_container{
+    width: 80%;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.reward_text h2{
+    color: #000;
+}
+
+.reward_text *{
+    margin: 4rem 0;
+}
+
+.reward_text p{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:500px) {
+    .reward{
+        height: fit-content;
+    }
+    .reward_container{
+        flex-direction: column-reverse;
+    }
+
+    .reward_text p{
+        font-size: 1.2rem;
+    }
+}
