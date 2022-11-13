@@ -11,6 +11,9 @@ import image4 from '../Images/image4.png'
 import image5 from '../Images/image5.png' 
 import image6 from '../Images/image6.png'
 import Ellipse25 from '../Images/Ellipse25.png'
+import student from  '../Images/student.jpg'
+import male from  '../Images/male.jpg'
+import group from  '../Images/Study-Group.jpg'
 
 
 const Hero = () => {
@@ -58,12 +61,16 @@ const Hero = () => {
 
                     <div className={styles.inline_images}>
 
-                    <div className={styles.inline_image1} style={{height:'10rem', width:'10rem'}}>
-                 <img src={image5} alt=''></img>
+                    <div className={styles.inline_image1}>
+                 <img src={student} alt=''></img>
                  </div>
 
-                 <div className={styles.inline_image2} style={{height:'10rem', width:'10rem'}}>
-                 <img src={image6} alt=''></img>
+                 <div className={styles.inline_image2}>
+                 <img src={male} alt=''></img>
+                 </div>
+
+                 <div className={styles.inline_image3}>
+                 <img src={group} alt=''></img>
                  </div>
 
                     </div>

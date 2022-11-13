@@ -141,7 +141,7 @@ const Trend = () => {
       </div>
 
       <div className={styles.more_topics}>
-          <Link href='/topics'><a> See more topics <IoIosArrowDropright></IoIosArrowDropright>
+          <Link to='department/science'><a> See more topics <IoIosArrowDropright></IoIosArrowDropright>
             
             </a></Link>
       </div>

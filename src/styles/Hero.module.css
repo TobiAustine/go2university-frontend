@@ -168,6 +168,22 @@
         gap: 11rem;
     }
 
+    .inline_images .inline_image3{
+        display: none;
+    }
+
+    .inline_images *{
+        height: 20rem;
+        width: 20rem;
+        
+    }
+
+    .inline_images img{
+        width: 100%;
+        object-fit: contain;
+       border-radius: 0.5rem;
+    }
+
     .hero_cta{
         margin-top: 4rem;
     }
@@ -243,9 +259,13 @@
         font-size: 1.2rem;
     }
 
-    .hero_text_body .inline_images  .inline_image1{
+    .inline_images  .inline_image1, .inline_images .inline_image2{
         display: none;
        
+    }
+
+    .inline_images .inline_image3{
+        display: block;
     }
 
     .inline_image2{
