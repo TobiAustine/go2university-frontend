@@ -43,7 +43,7 @@ const Reward = () => {
                     <p>Schedule the time frame you want to take your course, get it completed and move up in your success story </p>
             </div>
             <div className={styles.reward_image} data-aos="fade-up">
-               <img src={reward} width={600} height={500} alt=''></img> 
+               <img src={reward}  alt=''></img> 
             </div>
 
         </div>

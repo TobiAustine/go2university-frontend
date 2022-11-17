@@ -40,20 +40,21 @@ const About = () => {
     <div className={styles.about} >
         <div className={styles.about_container}>
             <div className={styles.about_image} data-aos="fade-right">
+              
                   <div className={styles.image3}>
-                <img src={Rectangle1} width={350} height={250} alt=''></img>
+                <img src={Rectangle1} alt=''></img>
                 </div>
 
                 <div className={styles.image4}>
-                <img src={Rectangle1} width={350} height={250} alt=''></img>
+                <img src={Rectangle1} alt=''></img>
                 </div>
                 
                 <div className={styles.image1}> 
-                <img src={about} width={350} height={250} alt=''></img>
+                <img src={about} alt=''></img>
                 </div>
 
                 <div className={styles.image2}>
-                <img src={Rectangle} width={350} height={250} alt=''></img>
+                <img src={Rectangle} alt=''></img>
                 </div>
 
               

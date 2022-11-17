@@ -7,7 +7,7 @@ import Reward from '../components/Reward'
 import Search from '../components/Search'
 import Statistics from '../components/Statistics'
 import Subscribe from '../components/Subscribe'
-import Testimonial from '../components/Testimonial'
+import Testimonial from '../components/Testimonials'
 import Trend from '../components/Trend'
 import {Helmet} from 'react-helmet'
 

@@ -60,11 +60,14 @@ const Signup = () => {
        e.preventDefault()
 
        if(!name || !password || !email){
+        alert('Please fill in all details')
         toast.error("Please fill in all details")
        }else{
           const userData = {name, email,password}
 
           dispatch(register(userData))
+
+          setForm(form)
        }
         
     }

@@ -179,6 +179,10 @@ margin-bottom: 3rem;
     cursor: default;
 }
 
+.question a{
+    text-decoration: underline;
+}
+
 .log {
     color: black;
     background-color: white !important;
