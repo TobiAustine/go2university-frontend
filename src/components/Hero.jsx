@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/Hero.module.css'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,6 +14,7 @@ import Ellipse25 from '../Images/Ellipse25.png'
 import student from  '../Images/student.jpg'
 import male from  '../Images/male.jpg'
 import group from  '../Images/Study-Group.jpg'
+import { useSelector, useDispatch } from 'react-redux'
 
 
 const Hero = () => {
@@ -43,8 +44,9 @@ const Hero = () => {
       });
     }, [])
     
-
-   
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const {user} = useSelector((state) => state.user)
 
 
 
@@ -76,7 +78,7 @@ const Hero = () => {
                     </div>
 
                     <button className={styles.hero_cta}>
-                        <Link to='/signup'> Get Started</Link>
+                      {user ?<Link to='/department/science'> View Our Topics...</Link>:<Link to='/signup'> Get Started</Link>}  
                     </button>
 
                 </div>

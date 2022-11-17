@@ -66,6 +66,7 @@ const Signup = () => {
           const userData = {name, email,password}
 
           dispatch(register(userData))
+          navigate('/department/science')
 
           setForm(form)
        }

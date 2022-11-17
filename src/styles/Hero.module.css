@@ -157,6 +157,9 @@
 
         /* MEDIA QUERIES*/
 @media screen and (max-width:1200px) {
+    .hero{
+        height: fit-content;
+    }
     .hero_image{
         display: none;
     }
@@ -237,7 +240,7 @@
     }
 
     .hero_text_body .hero_cta{
-        margin-top: 6rem;
+        margin-top: 1rem;
     }
 }
 
