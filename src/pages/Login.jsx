@@ -94,7 +94,7 @@ const Login = () => {
         <div className={styles.login_container}>
 
         <div className={styles.login_image}>
-            <div className={styles.thumb} style={{height:'50rem', width:'30rem' , position:'relative'}}>
+            <div className={styles.thumb}>
            <img alt='login' src={fingerprint}></img>
            </div>     
         </div>
