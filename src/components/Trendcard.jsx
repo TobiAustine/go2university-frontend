@@ -8,7 +8,7 @@ const Trendcard = ({src, topic, subject}) => {
     <div className={styles.trendcard_container}>
         <div className={styles.trendcard_container_image}>
             {/* <img src={src} alt="" />  */}
-            <img src={src} alt="" width={300} height={150}></img>           
+            <img src={src} alt="" ></img>           
         </div>
 
         <div className={styles.trendcard_container_topic}>

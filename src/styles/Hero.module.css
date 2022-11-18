@@ -75,35 +75,35 @@
     width: 20rem !important;
     position: absolute;
     left: 12rem;
-    top: -11rem;
+    top: -15rem;
 }
 .hero_image .image2{
     height: 12rem !important;
     width: 12rem !important;
     position: absolute;
     left: 1rem;
-    top: -5rem;
+    top: -7rem;
 }
 .hero_image .image3{
     height:12rem !important;
     width:22rem !important;
     position: absolute;
     left: 8rem;
-    top: 6rem;
+    top: 4rem;
 }
 .hero_image .image4{
     height:12rem !important;
     width:12rem !important;
     position: absolute;
     left: 4rem;
-    top: 8rem;
+    top: 6rem;
 }
 .hero_image .image5{
     height:12rem !important;
     width:12rem !important;
     position: absolute;
     left: 15rem;
-    top: -8rem;
+    top: -10rem;
 }
 
 .hero_image .image6{
@@ -111,7 +111,7 @@
     width:2rem !important;
     position: absolute;
     left: 0rem;
-    top: 20rem;
+    top: 17rem;
 }
 
 /* .newimage1{

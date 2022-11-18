@@ -33,14 +33,14 @@
     padding: 2rem;
   } */
 
-  /* .swiper_wrapper {
+/* .swiper_wrapper {
     padding: 3rem;
     margin: 1rem;
-    display: flex;
+    display: flex !;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-  } */
+  }  */
 
   /* .swiper_slide{
     width: 35%;

@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
 import styles from '../styles/Testimonials.module.css'
 import {FaStar, FaStarHalfAlt} from 'react-icons/fa'
-import image3 from '../Images/image3.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-// import Testimonial from './Testimonial';
 import {testimonials} from '../data'
 import {IoIosArrowDropleftCircle, IoIosArrowDroprightCircle} from 'react-icons/io'
 
