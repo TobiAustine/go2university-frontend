@@ -9,7 +9,7 @@
 
  .hero_container{
     display: flex;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -66,11 +66,20 @@
     gap:5px; */
     width: 100%; 
     position: relative; 
-    padding-left: 7rem;
-    padding-bottom: 3.5rem;   
+    padding-bottom: 3.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
-.hero_image .image1{
+
+.hero_image img{
+    height: 20rem;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+/* .hero_image .image1{
     height: 10rem !important;
     width: 20rem !important;
     position: absolute;
@@ -114,46 +123,10 @@
     top: 17rem;
 }
 
-/* .newimage1{
-    position: absolute;
-    left: 1rem;
-    top: 8rem;
-}
-
-.newimage2{
-    position: absolute;
-    left: 1rem;
-    top: 10rem;
-}
-
-.newimage3{
-    position: absolute;
-    left: 12rem;
-    top: 3rem;
-}
-
-.newimage4{
-    position: absolute;
-    left: 12rem;
-    top: -20rem;
-}
-
-.newellipse{
-    position: absolute;
-    top: 13rem;
-    left: 18rem;
-}
-
-.newimage5{
-    position: absolute;
-    top: -11rem;
-    left: -2rem;
-    z-index: -111;
-} */
 
 .hero_image .image1, .hero_image .image3 {
     padding-left: 10rem;
-}
+} */
 
         /* MEDIA QUERIES*/
 @media screen and (max-width:1200px) {

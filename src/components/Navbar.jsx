@@ -114,7 +114,12 @@ const  toggleMenuIcon = () => {
 
 
                 <li className={styles.category}  onClick={toggleDropdown}> Departments <IoIosArrowDown className={styles.arrow}></IoIosArrowDown>
-                {dropdown && <Dropdown onClick={() => setMobileMenu(false)}></Dropdown>}
+                {dropdown &&
+                
+                <Dropdown onClick={() => setMobileMenu(false)}></Dropdown>
+                
+                
+                }
                 
                 
                 
