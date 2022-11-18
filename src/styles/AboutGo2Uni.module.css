@@ -4,6 +4,7 @@
 
 .about_banner img{
     width: 100vw;
+    height: 10rem;
 }
 
 .about_text:first-child:first-letter{
