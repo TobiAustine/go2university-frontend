@@ -9,10 +9,11 @@
     grid-template-columns:  40% 60%;
 }
 
-/* .login_image{
-    display: grid;
-    margin-top: -6rem;
-} */
+.login_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 .login_text{
     padding: 2rem;
