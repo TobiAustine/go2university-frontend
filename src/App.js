@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import {Provider} from 'react-redux'
 import {store} from './features/store' 
 import Science from './pages/Science';

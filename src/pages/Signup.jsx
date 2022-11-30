@@ -9,10 +9,18 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { register,reset } from "../features/userSlice/userSlice";
 import Spinner from "../components/Spinner";
+// import  googleOneTap from 'google-one-tap'
 
 
 
 const Signup = () => {
+
+ 
+
+
+
+ 
+  
 
     const [form, setForm] = useState({
         name:'',
@@ -39,9 +47,9 @@ const Signup = () => {
       if(isSuccess || user){
         navigate('/')
 
-        toast.success('Registration Successfull')
+       return toast.success('Registration Successfull')
       }else{
-        toast.error("An error occured")
+      return  toast.error("An error occured")
       }
 
       dispatch(reset)
@@ -59,13 +67,17 @@ const Signup = () => {
     const onSubmit = (e) => {
        e.preventDefault()
 
+        if(email.length < 8){
+          toast.error('Password must have at least 8 characters')
+        }
+
        if(!name || !password || !email){
-        alert('Please fill in all details')
         toast.error("Please fill in all details")
        }else{
           const userData = {name, email,password}
 
           dispatch(register(userData))
+          toast.success('Registration Successful')
           navigate('/department/science')
 
           setForm(form)

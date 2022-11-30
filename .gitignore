@@ -21,3 +21,47 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+.env
+
+
+ const options = {
+    client_id : '536024028571-e67jiai9mcocfvm792fhernvlckejm24.apps.googleusercontent.com',
+    auto_select : false,
+    cancel_on_tap_outside: false,
+    context: "signin"
+  }
+
+  const [loginData, setLoginData] = useState(
+    localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null 
+  )
+
+
+  useEffect(() => {
+    if(!loginData){
+      googleOneTap(options, async(response) =>{
+          console.log(response);
+          const res = await fetch('api/google-login', {
+            method: 'POST',
+            body: JSON.stringify({
+              token: response.credential,
+            }),
+            headers: {
+              'Content-Type': "application/json"
+            }
+          })
+
+          const data = await res.json();
+
+          setLoginData(data)
+          localStorage.setItem('user', JSON.stringify(data))
+      })
+    }
+  }, [loginData])
+
+
+   const handleLogout = () => {
+    localStorage.removeItem('user')
+    setLoginData(null)
+  }

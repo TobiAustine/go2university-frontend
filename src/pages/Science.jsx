@@ -18,7 +18,7 @@ const Science = () => {
 
       <div className={styles.science}>
      <div className={styles.department}><h2>Sciences</h2></div>
-     <div className={styles.state}>Welcome to the World of science. Choose your Subject</div>
+     <div className={styles.state}>Welcome to the World of science. Choose a topic.</div>
 
 
 

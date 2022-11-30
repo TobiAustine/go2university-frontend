@@ -56,13 +56,23 @@ const Login = () => {
   
     const onSubmit = (e) => {
       e.preventDefault()
-
       
-      const userData = {
+      if (!email || !password) {
+        toast.error("Please fill in all details")
+      } else {
+         const userData = {
         email, password
       }
 
       dispatch(login(userData))
+
+      toast.success('Login Successful')
+      navigate('/department/science')
+
+      setFormData(formData)
+      }
+      
+     
    }
   
   //  const signin = () => {
